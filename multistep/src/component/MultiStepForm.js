@@ -29,7 +29,7 @@ const MultiStepForm = () => {
   const handleSubmit = async () => {
     if (validateForm()) {
       try {
-        await axios.post("http://localhost:8080/users", formData);
+        await axios.post("https://multistepform-v1z5.onrender.com/users", formData);
         alert("User Created Successfully");
       } catch (error) {
         console.error("Error creating user:", error);
